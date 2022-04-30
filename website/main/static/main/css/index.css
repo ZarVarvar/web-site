@@ -1,0 +1,90 @@
+body, html{
+    width:100%;
+    height:100%;
+}
+
+.conteiner{
+    max-width: 966px;
+    min-height: 100%;
+    background: #F0F0F0;
+    margin: 0 auto;
+}
+
+/*Шапка начало*/
+.contentheader{
+    padding: 30px 0 30px 30px;
+}
+
+.logo{
+    display: inline-block;
+    margin-right:40px;
+}
+
+.textheader{
+    font-family: 'Monotype Corsiva';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+
+    background: linear-gradient(180deg, #293F52 0%, #4F7B9E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    margin-right:30px;
+}
+
+.search{
+    width: 136px;
+    height: 21px;
+
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left:70px;
+}
+
+.basket{
+    margin: 0px 10px 5px 10px;
+}
+/*Шапка конец*/
+
+/*Доставка начало*/
+.content{
+    max-width: 798px;
+    margin: 0 auto;
+}
+
+.deliverytext{
+    text-align: justify;
+}
+
+.map{
+    display: block;
+    margin: 50px auto 0 auto;
+    border: 2px solid #476f8e;
+    border-radius: 20px;
+}
+/*Доставка конец*/
+
+/*Подвал начало*/
+.podval{
+    margin:0 auto;
+    padding:30px;
+    width: 966px;
+    height: 189px;
+    background: linear-gradient(180deg, rgba(45, 70, 90, 0.9) 0%, rgba(75, 117, 150, 0.9) 100%);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color:white;
+}
+
+.podvaltext{
+    display: inline-table;
+    margin: 0 150px 0 0;
+}
+/*Подвал конец*/
+
