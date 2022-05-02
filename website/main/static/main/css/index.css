@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body, html{
     width:100%;
     height:100%;
@@ -8,11 +10,12 @@ body, html{
     min-height: 100%;
     background: #F0F0F0;
     margin: 0 auto;
+    padding: 30px;
 }
 
 /*Шапка начало*/
 .contentheader{
-    padding: 30px 0 30px 30px;
+
 }
 
 .logo{
@@ -49,12 +52,17 @@ body, html{
 .basket{
     margin: 0px 10px 5px 10px;
 }
+
+#authorizationmargin{
+    margin:0;
+}
 /*Шапка конец*/
 
 /*Доставка начало*/
 .content{
     max-width: 798px;
     margin: 0 auto;
+    padding-top:30px;
 }
 
 .deliverytext{
@@ -66,25 +74,95 @@ body, html{
     margin: 50px auto 0 auto;
     border: 2px solid #476f8e;
     border-radius: 20px;
+    width:800px;
+    height:600px;
 }
 /*Доставка конец*/
+
+/*Вход и регистрация начало*/
+.enter{
+    position: absolute;
+    left:50%;
+    top:50%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    width: 396px;
+    height: 337px;
+    background: #F0F0F0;
+    border-radius: 10px;
+}
+
+.registr{
+    position:absolute;
+    width: 396px;
+    height: 540px;
+    left:50%;
+    top:50%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    background: #F0F0F0;
+    border-radius: 10px;
+}
+
+.displayblock{
+    display:block;
+    margin:0 auto;
+}
+
+.textfamily{
+    font-family: 'Lobster', cursive;
+    text-align:center;
+    margin-top: 10px;
+}
+
+.textmarginleft{
+    margin-left:70px;
+}
+
+.buttonstyle{
+    width: 160px;
+    height: 29px;
+    background: linear-gradient(180deg, #293F51 0%, #4F7B9E 100%);
+    border:none;
+    border-radius: 3px;
+    color:white;
+    font-weight:bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inputstyle{
+    width: 256px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align:none;
+}
+
+.return{
+    width:30px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+/*Вход и регистрация конец*/
 
 /*Подвал начало*/
 .podval{
     margin:0 auto;
     padding:30px;
-    width: 966px;
+    max-width: 966px;
     height: 189px;
     background: linear-gradient(180deg, rgba(45, 70, 90, 0.9) 0%, rgba(75, 117, 150, 0.9) 100%);
-    font-style: normal;
-    font-size: 16px;
-    line-height: 28px;
-    color:white;
 }
 
 .podvaltext{
     display: inline-table;
     margin: 0 150px 0 0;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color:white;
 }
 /*Подвал конец*/
 

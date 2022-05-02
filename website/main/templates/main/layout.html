@@ -25,7 +25,7 @@
                         <a class="textheader" href="{% url 'about' %}">О нас</a>
                 <input class="search" name="s" placeholder="Поиск" type="search">
                 <a href="{% url 'basket' %}"><img class="basket" src="{% static 'main/img/basket.svg' %}"></a>
-                <a class="textheader" href="{% url 'authorization' %}">Авторизация</a>
+                <a id="authorizationmargin" class="textheader" href="{% url 'authorization' %}">Авторизация</a>
             </div>
         </header>
     {% block content %}
@@ -43,7 +43,7 @@
         <br>
         8(800)-255-35-35
     </p>
-    <span><b>Мы в сети!</b></span>
+    <span class="podvaltext"><b>Мы в сети!</b></span>
 </footer>
 </body>
 </html>

@@ -15,3 +15,6 @@ def basket(request):
 
 def authorization(request):
     return render(request, 'main/authorization.html')
+
+def registration(request):
+    return render(request, 'main/registration.html')
