@@ -1,7 +1,14 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block title %}Главная{% endblock %}
 
 {% block content %}
-    <h1>Главная</h1>
+<div class="content">
+    <div class="tovar">
+        <img src="{% static 'main/img/image.png' %}" alt="image">
+        <p class="tovartext">Название товара</p>
+        <p class="tovartext">2500р.</p>
+        <button class="tovarbutton">Купить</button>
+    </div>
+</div>
 {% endblock %}
