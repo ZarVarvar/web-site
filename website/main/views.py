@@ -1,8 +1,10 @@
 from django.shortcuts import render
+from .models import Tovar
 # Create your views here.
 
 def index(request):
-    return render(request, 'main/index.html')
+    tovar = Tovar.objects.all()
+    return render(request, 'main/index.html', {'tovar':tovar})
 
 def about(request):
     return render(request, 'main/about.html')
@@ -18,3 +20,5 @@ def authorization(request):
 
 def registration(request):
     return render(request, 'main/registration.html')
+
+

@@ -4,11 +4,17 @@
 
 {% block content %}
 <div class="content">
+  {% if tovar %}
+    {% for i in tovar %}
     <div class="tovar">
-        <img src="{% static 'main/img/image.png' %}" alt="image">
-        <p class="tovartext">Название товара</p>
-        <p class="tovartext">2500р.</p>
+        <img class="image" src="{{MEDIA_URL}}{{i.image.url}}" alt="image">
+        <p class="tovartext tovartexttittle">{{i.title}}</p>
+        <p class="tovartext">{{i.price}} руб.</p>
         <button class="tovarbutton">Купить</button>
     </div>
+    {% endfor %}
+  {% else %}
+    <p>Товары отсутсвуют</p>
+  {% endif %}
 </div>
 {% endblock %}

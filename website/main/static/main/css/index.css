@@ -60,10 +60,16 @@ body, html{
 
 /*Товары(главная) начало*/
 .tovar{
+    margin:10px;
+    display:inline-block;
     text-align:center;
     padding:5px;
     width: 108px;
     background:white;
+}
+
+.tovartexttittle{
+    height:50px;
 }
 
 .tovartext{
@@ -78,6 +84,11 @@ body, html{
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+.image{
+    width: 92px;
+    height: 95px;
 }
 
 .tovarbutton{
