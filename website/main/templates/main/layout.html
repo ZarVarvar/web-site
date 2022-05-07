@@ -23,7 +23,10 @@
                         <a class="textheader" href="{% url 'home' %}">Главная</a>
                         <a class="textheader" href="{% url 'delivery' %}">Доставка</a>
                         <a class="textheader" href="{% url 'about' %}">О нас</a>
-                <input class="search" name="s" placeholder="Поиск" type="search">
+                <form action="{% url 'home' %}" class="formsearch">
+                    <input class="search" type="search" name="query" placeholder="Поиск">
+                    <button class="buttosearch" type="submit">Найти</button>
+                </form>
                 <a href="{% url 'basket' %}"><img class="basket" src="{% static 'main/img/basket.svg' %}"></a>
                 <a id="authorizationmargin" class="textheader" href="{% url 'authorization' %}">Авторизация</a>
             </div>

@@ -3,7 +3,11 @@ from .models import Tovar
 # Create your views here.
 
 def index(request):
-    tovar = Tovar.objects.all()
+    if 'query' in request.GET:
+        q = request.GET['query']
+        tovar = Tovar.objects.filter(title__icontains=q)
+    else:
+        tovar = Tovar.objects.all()
     return render(request, 'main/index.html', {'tovar':tovar})
 
 def about(request):
@@ -20,5 +24,6 @@ def authorization(request):
 
 def registration(request):
     return render(request, 'main/registration.html')
+
 
 

@@ -39,6 +39,20 @@ body, html{
     margin-right:30px;
 }
 
+.formsearch{
+    display:inline-block;
+}
+
+.buttosearch{
+    height: 21px;
+    background: linear-gradient(180deg, #293F51 0%, #4F7B9E 100%);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
 .search{
     width: 136px;
     height: 21px;
@@ -46,7 +60,7 @@ body, html{
     border: 1px solid rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
     border-radius: 4px;
-    margin-left:70px;
+    margin-left:15px;
 }
 
 .basket{
