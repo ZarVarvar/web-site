@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Оформление заказа{% endblock %}
+
+{% block content %}
+<form method="POST" action="/saveorder" style="display:grid">
+    {% csrf_token %}
+    <div class="tovar">
+        <input type="hidden" value="{{order.id}}" name="orderid">
+        <input type="hidden" value="{{order.title}}" name="tovarname">
+        <input type="hidden" value="{{order.price}}" name="orderprice">
+        <img class="image" src="{{MEDIA_URL}}{{order.image.url}}" alt="image">
+        <p class="tovartext tovartexttittle">{{order.title}}</p>
+        <p class="tovartext">{{order.price}} руб.</p>
+    </div>
+<br>
+    ФИО: <input type="text" name="username">
+    Телефон: <input type="text" name="phone">
+    Email: <input type="text" name="email">
+    Адрес: <input type="text" name="address">
+<br>
+    <button class="buttonstyle" type="submit">Оформить заказ</button>
+</form>
+{% endblock %}

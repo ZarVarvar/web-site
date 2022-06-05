@@ -10,7 +10,7 @@
         <img class="image" src="{{MEDIA_URL}}{{i.image.url}}" alt="image">
         <p class="tovartext tovartexttittle">{{i.title}}</p>
         <p class="tovartext">{{i.price}} руб.</p>
-        <button class="tovarbutton">Купить</button>
+        <button class="tovarbutton" onclick="document.location='order/{{i.id}}'" type="submit">Купить</button>
     </div>
     {% endfor %}
   {% else %}
@@ -18,3 +18,4 @@
   {% endif %}
 </div>
 {% endblock %}
+

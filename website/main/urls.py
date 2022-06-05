@@ -10,7 +10,8 @@ urlpatterns = [
     path('delivery', views.delivery, name='delivery'),
     path('basket', views.basket, name='basket'),
     path('authorization', views.authorization, name='authorization'),
-    path('registration', views.registration, name='registration')
+    path('registration', views.registration, name='registration'),
+    path('order', views.order, name='order'),
 ]
 
 if settings.DEBUG:
